@@ -1,2 +1,1 @@
-# rsschool-cv
-RSS  "Markdown &amp; Git" task from stage 0
+[link to CV](https://shadowinhaze.github.io/rsschool-cv/cv)
