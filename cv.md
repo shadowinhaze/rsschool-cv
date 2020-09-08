@@ -2,8 +2,8 @@
 WebMaster / designer at [Algimed LTD](https://algimed.com), Minsk, Belarus.
 
 
-[![My mail](https://github.com/paulrobertlloyd/socialmediaicons/blob/main/email-16x16.png) poleshkophillip@gmail.com](mailto:poleshkophillip@gmail.com) | 
-[![My LinkedIn](https://github.com/paulrobertlloyd/socialmediaicons/blob/main/linkedin-16x16.png) LinkedIn](https://www.linkedin.com/in/shadowinhaze/)
+[ ![](https://github.com/paulrobertlloyd/socialmediaicons/blob/main/email-16x16.png) poleshkophillip@gmail.com](mailto:poleshkophillip@gmail.com) | 
+[ ![](https://github.com/paulrobertlloyd/socialmediaicons/blob/main/linkedin-16x16.png) LinkedIn](https://www.linkedin.com/in/shadowinhaze/)
 
 ## Summary
 
@@ -36,12 +36,11 @@ Sites of company projects with Bitrix framework, some school-projects on CodeAca
 * UNIX
 * Docker
 * PHP
----
 * UX / UI
 * InDesign / Illustrator 
 
 ## Languages
 
-* Russian - native
-* Polish - B1 
-* English - A2 / B1, lots of chat with SM / PM / Applicators from different companies.
+* __Russian__ - native
+* __Polish__ - B1 
+* __English__ - A2 / B1, lots of chat with SM / PM / Applicators from different companies.
