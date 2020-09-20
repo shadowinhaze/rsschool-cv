@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 16px Helvetica, Sans-Serif;
+    line-height: 24px;
+    background: rgb(250, 250, 250);
+}
+
+footer {
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    border-top: 1px solid #999;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px 0;
+    color: #999;
+}
+
+.real {
+    margin-top: 10px;
+    margin-bottom: 32px;
+    color: #999;
+}
+
+#cv {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto 60px;
+    padding: 30px 0px;
+}
+
+#photo {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    transform: rotate(-2deg) scale(.9);
+}
+
+h1 {
+    margin: 0 0 0 0;
+    padding: 0 0 16px 0;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    border-bottom: 1px solid #999;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px dotted #999;
+}
+
+a:hover {
+    border-bottom-style: solid;
+    color: black;
+}
+
+
+#objective {
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 36px 0;
+}
+
+#objective p {
+    font-family: Georgia, Serif;
+    font-style: italic;
+    color: #666;
+}
+
+.sub_Block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 42px 0px; 
+}
+
+.sub_Block h3 {
+    width: 25%;
+}
+
+.sub_Block h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #999;
+}
+
+.sub_Block div {
+    width: 50%;
+}
+
+.sub_Block ul {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 12px;
+}
