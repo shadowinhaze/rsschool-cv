@@ -101,6 +101,11 @@ p.footer_text {
     transform: rotate(-2deg) scale(.9);
 }
 
+#my_photo figcaption {
+    text-align: center;
+    font-style: oblique;
+}
+
 .logo {
     max-width: 150px;
 }
