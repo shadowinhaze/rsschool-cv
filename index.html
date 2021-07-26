@@ -1,59 +1,54 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-    <title>CV Jan Poleshko</title>
-
     <link rel="stylesheet" href="./style.css">
-
+    <title>CV Jan Poleshko</title>
 </head>
 
 <body>
+    <header>
+        <h1 class="name">Jan Poleshko</h1>
+        <h2 class="real">WebMaster / Designer</h2>
+        <address>
+            <ul class="default-list">
+                <li><p>Place: <strong>Warszawa, Polska</strong></p></li>
+                <li><p>Email: <a href="mailto:poleshkophillip@gmail.com">poleshkophillip@gmail.com</a></p></li>
+                <li><p>LinkedIn: <a href="https://www.linkedin.com/in/shadowinhaze/">@shadowinhaze</a></p></li>
+            </ul>
+        </address>
+        <img src="images/photo.png" alt="My photo" id="my_photo"/>
+    </header>
+    
+    <main>
+        <section class="vcard" id="contact-info">
 
-    <main id="cv">
-
-        <section id="contact-info" class="vcard">
-
-            <!-- Microformats! -->
-
-            <h1 class="name">Jan Poleshko</h1>
-            <h2 class="real">WebMaster / Designer</h2>
-
-            <address>
-                <p>Place: <strong>Warszawa, Polska</strong></p>
-                <p>Email: <a href="mailto:poleshkophillip@gmail.com">poleshkophillip@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/shadowinhaze/">shadowinhaze</a></p>
-            </address>
         </section>
 
-        <img src="images/photo.png" alt="Photo of Cthulu" id="photo" />
+       
 
-        <section id="objective">
+        <section id="summary">
+            <h3>Summary</h3>
             <p>
-                My objective is to create and maintain optimally functional websites and applications as tools in
-                achieving the company mission and vision. As a part of a marketing department in my company, I intend to
-                make good POS-meterials, watch for SEO and base workflow and promotion to as many social media platforms
-                as possible. One of my goals includes constantly improving my skills in web development. I want to use
-                my knowledges of business processes to build rather good ERP / CRM systems, improve synchronizations
-                between different modern and performance systems and 1C:products.
+                Want to create and maintain optimally functional websites and applications as tools in achieving the company mission and vision. 
+                As a part of a marketing department in previous company, I intented to make good POS-meterials, watched for SEO and base workflow, promotions for various channels. 
+                One of my goals includes constantly improving my skills in web development.
+                I want to use my knowledges of business processes to build rather good ERP / CRM systems, improve synchronizations between different modern and performance systems.
             </p>
         </section>
 
-
         <section id="main_Features">
-
-            <div class="sub_Block">
+            <div class="main_Features__block">
                 <h3>Employment</h3>
                 <div>
                     <h4>Algimed Ltd. WebMaster</h4>
-                    <p>2016 - ...</p>
+                    <p>2015 - 2021</p>
                 </div>
             </div>
 
-            <div class="sub_Block">
+            <div class="main_Features__block">
                 <h3>Education</h3>
                 <div>
                     <h4>BSU (Belarus)</h4>
@@ -61,41 +56,45 @@
                 </div>
             </div>
 
-            <div class="sub_Block">
-                <h3>Experience</h3>
+            <div class="main_Features__block">
+                <h3>Examples</h3>
                 <div>
-                    <p>Sites of company projects with Bitrix framework, some school-projects on CodeAcademy, SkillBox
-                        free marathons.</p>
+                    <ul class="exp-list">
+                        <li>Sites of Algimed Ltd (<a href="algimed.com" target="_blank">algimed.com</a>, <a href="algimed-techno.com" target="_blank">algimed-techno.com</a>);</li>
+                        <li><a href="https://www.codewars.com/users/shadowinhaze/completed_solutions" target="_blank">Profile</a> at CodeWars platform.</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="sub_Block">
+            <div class="main_Features__block">
                 <h3>Technical skills</h3>
                 <div>
                     Javascript, HTML and CSS, Bash, Git / Mercurial, UNIX, Docker, PHP, UX / UI, InDesign / Illustrator
                 </div>
             </div>
 
-            <div class="sub_Block">
+            <div class="main_Features__block">
                 <h3>Languages</h3>
                 <div>
-                    <ul>
-                        <li><b>Russian</b> - native;</li>
-                        <li><b>Polish</b> - B1;</li>
-                        <li><b>English</b> - A2 / B1, lots of chat with SM / PM / Applicators from different companies.
+                    <ul class="default-list">
+                        <li><strong>Russian</strong> - native;</li>
+                        <li><strong>Polish</strong> - B1;</li>
+                        <li><strong>English</strong> - A2 / B1, lots of chat with SM / PM / Applicators from different companies.
                         </li>
                     </ul>
                 </div>
             </div>
-
         </section>
-
     </main>
+
+    <footer>
+        <p>Jan Poleshko 2021 CV for <a href="https://rs.school/js/">RSSchool course</a>.</p>
+        <p><img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="RSSchool logo"></p>
+        <p><a href="https://github.com/rolling-scopes-school">RSS github</a></p>
+    </footer>
 
 </body>
 
-<footer>
-    <p>Jan Poleshko CV for RSS 2020Q3</p>
-</footer>
+
 
 </html>
