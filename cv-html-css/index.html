@@ -3,14 +3,51 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
     <link rel="stylesheet" href="./style.css">
+
+    <script async src="script.js" type="module"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <title>CV Jan Poleshko</title>
 </head>
 
 <body>
     <header>
-        <h1 class="name">Jan Poleshko</h1>
+        <div class="header__container">
+            <div class="sideheader__photo_container">
+                <figure id="my_photo">
+                    <img src="images/memoji.png"
+                         alt="My memoji">
+                </figure>
+            </div>
+            <div class="sideheader__name_container">
+                <h1>Yan Poleshko</h1>
+            </div>
+            <div class="sideheader__menu_container">
+                <nav class="main_navigation">
+                    <ul>
+                        <li class="main_navigation__item active"><a href="#" id="dashboard">Dashboard</a></li>
+                        <li class="main_navigation__item"><a href="#" id="product">Product</a></li>
+                        <li class="main_navigation__item"><a href="#" id="pricing">Pricing</a></li>
+                        <li class="main_navigation__item"><a href="#" id="docs">Docs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- <h1 class="name">Jan Poleshko</h1>
         <h2 class="real">WebMaster / Designer</h2>
         <address>
             <ul class="default-list">
@@ -29,11 +66,11 @@
             <img src="images/photo.png"
                  alt="My face">
             <figcaption>Hi, it's me</figcaption>
-        </figure>
+        </figure> -->
     </header>
 
     <main>
-        <section id="summary">
+        <!-- <section id="summary">
             <h3>Summary</h3>
             <p>
                 Want to create and maintain optimally functional websites and applications as tools in achieving the
@@ -104,17 +141,14 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <footer>
-        <p class="footer_text">Jan Poleshko 2021 CV for <a href="https://rs.school/js/">RSSchool course</a>.</p>
+        <!-- <p class="footer_text">Jan Poleshko 2021 CV for <a href="https://rs.school/js/">RSSchool course</a>.</p>
         <p class="footer_text"><img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="RSSchool logo"></p>
-        <p class="footer_text"><a href="https://github.com/rolling-scopes-school">RSS github</a></p>
+        <p class="footer_text"><a href="https://github.com/rolling-scopes-school">RSS github</a></p> -->
     </footer>
-
 </body>
-
-
 
 </html>

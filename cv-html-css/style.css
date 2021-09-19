@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+header {
+  height: 100%;
+  width: 230px;
+  background-color: #BDC3FF;
+  border-radius: 40px 0 0 40px;
+  padding: 55px 0px 55px 20px;
+}
+header .header__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-right: 20px;
+  border-right: 1px solid #A3AAF5;
+}
+header .header__container .sideheader__photo_container figure {
+  margin: 0;
+  text-align: center;
+}
+header .header__container .sideheader__name_container {
+  margin: 15px 0 50px 0px;
+}
+header .header__container .sideheader__name_container h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+header .header__container .sideheader__menu_container {
+  display: flex;
+  justify-content: center;
+}
+header .header__container .sideheader__menu_container .main_navigation .main_navigation__item {
+  margin-bottom: 42px;
+}
+header .header__container .sideheader__menu_container .main_navigation .main_navigation__item a {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+header .header__container .sideheader__menu_container .main_navigation .main_navigation__item a:before {
+  content: "";
+  height: 24px;
+  width: 24px;
+  margin-right: 12px;
+}
+header .header__container .sideheader__menu_container .main_navigation .main_navigation__item #dashboard:before {
+  background-image: url(./images/icons/dashboard_alt.svg);
+}
+header .header__container .sideheader__menu_container .main_navigation .main_navigation__item #product:before {
+  background-image: url(./images/icons/cpu.svg);
+}
+header .header__container .sideheader__menu_container .main_navigation .main_navigation__item #pricing:before {
+  background-image: url(./images/icons/bag.svg);
+}
+header .header__container .sideheader__menu_container .main_navigation .main_navigation__item #docs:before {
+  background-image: url(./images/icons/book_open.svg);
+}
+header .header__container .sideheader__menu_container .main_navigation .main_navigation__item.active a {
+  color: #654DEE;
+  border-left: 3px solid #654DEE;
+}
+header .header__container .sideheader__menu_container .main_navigation .main_navigation__item.active a:before {
+  filter: invert(27%) sepia(99%) saturate(2144%) hue-rotate(239deg) brightness(94%) contrast(98%);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #171521;
+  padding: 20px;
+  font-family: Montserrat;
+}
+
+body {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #ffffff;
+  border-radius: 40px;
+}
+
+footer {
+  align-items: center;
+  border-top: 1px solid #999;
+}
+
+/* ==== 2. BASE ELEMENTS ==== */
+p.footer_text {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  padding: 5px 0;
+  color: #999;
+}
+
+/* ==== 3. IMGS ==== */
+.logo {
+  max-width: 150px;
+}
+
+/* ==== 4. BLOCKS ==== */
+#summary {
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 36px 0;
+}
+
+.main_Features__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 15px;
+  margin: 42px 0px;
+}
+
+.main_Features__block h3 {
+  width: 20%;
+}
+
+.main_Features__block div {
+  width: 51%;
+}
+
+/*# sourceMappingURL=style.css.map */
