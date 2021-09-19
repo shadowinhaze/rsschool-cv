@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
     <link rel="stylesheet" href="./style.css">
 
-    <script async src="script.js" type="module"></script>
+    <script async src="./scripts/slider.js" type="module"></script>
+    <script async src="./scripts/pager.js" type="module"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -30,8 +31,8 @@
             <div class="header__container">
                 <div class="sideheader__photo_container">
                     <figure id="my_photo">
-                        <img src="images/memoji.png"
-                             alt="My memoji">
+                        <img src="images/memoji.png" alt="My memoji">
+                        <!-- <img src="images/photo_rep.png" alt="My memoji"> -->
                     </figure>
                 </div>
                 <div class="sideheader__name_container">
@@ -40,10 +41,10 @@
                 <div class="sideheader__menu_container">
                     <nav class="main_navigation">
                         <ul>
-                            <li class="main_navigation__item active"><a href="#" id="dashboard">Dashboard</a></li>
-                            <li class="main_navigation__item"><a href="#" id="product">Product</a></li>
-                            <li class="main_navigation__item"><a href="#" id="pricing">Pricing</a></li>
-                            <li class="main_navigation__item"><a href="#" id="docs">Docs</a></li>
+                            <li class="main_navigation__item active"><a href="#" id="dashboard" data-for-page="main_page">Main</a></li>
+                            <li class="main_navigation__item"><a href="#" id="product" data-for-page="exp">Experience</a></li>
+                            <li class="main_navigation__item"><a href="#" id="pricing" data-for-page="bla">Bla bla</a></li>
+                            <li class="main_navigation__item"><a href="#" id="docs" data-for-page="contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -57,36 +58,68 @@
                     </nav>
                 </div>
             </div>
-            <!-- <figure id="my_photo">
-                <img src="images/photo.png"
-                     alt="My face">
-                <figcaption>Hi, it's me</figcaption>
-            </figure> --> 
         </header>
         <main>
-            <section id="greeting">
-                <h2>👋🏻 Hello World!</h2>
-                <h3>My name is Yan<br>and I'm a frontend developer's larva 🐛</h3>
-                <p>If you don't want explore my web version CV, please download a paper one:</p>
-                <a href="#" class="default_button" title="download paper version of Yan's CV">Download CV</a>
-            </section>
-            <!-- <section id="summary">
-                <h3>Summary</h3>
-                <p>
-                    Want to create and maintain optimally functional websites and applications as tools in achieving the
-                    company mission and vision.
+            <div class="main__page_content is-active" data-page="main_page">
+                <div class="main__container left_container">
+                    <section id="greeting">
+                        <h2>👋🏻 Hello World!</h2>
+                        <h3>My name is Yan<br>and I'm a front-end developer's larva 🐛</h3>
+                        <p class="default_p">If you don't want explore my web version CV,<br> please download a paper one:</p>
+                        <a href="#" class="default_button" title="download paper version of Yan's CV">Download CV</a>
+                    </section>
                     
-                    As a part of a marketing department in previous company, I intented to make good POS-meterials, watched
-                    for SEO and base workflow, promotions for various channels.
-                    
-                    One of my goals includes constantly improving my skills in web-development.
-                    
-                    I want to use my knowledges of business processes to build rather good ERP / CRM systems, improve
-                    synchronizations between different modern and performance systems.
-                </p>
-            </section>
-    
-            <section id="main_Features">
+                    <section id="summary">
+                        <h3 class="default_h3">Summary</h3>
+                        <p class="default_p">
+                            Entry-level front-end developer with 5 years of experience in maintaining and building simple web-sites.
+                            Seeking for new challenges that will expand my skill ant technial level. I dream to become a real developer.
+                        </p>
+                        <p class="default_p">
+                            At previous company I was also involved in making POS-meterials, watching for SEO-optimisation and base workflow.
+                        </p>
+                    </section>
+                </div>
+                <div class="main__container right_container">
+                    <section id="projects_slider">
+                        <h3 class="default_h3">Some of my projects</h3>
+                        <div class="slider__wrapper">
+                            <div id="al" class="slider__item"><h4>E-commerse</h4></div>
+                            <div id="at" class="slider__item"><h4>Manufacture</h4></div>
+                            <div id="rss-webclock" class="slider__item"><h4>Web-clock</h4></div>
+                            <div id="rss-webplayer" class="slider__item"><h4>Web-player</h4></div>
+                            <div id="tf" class="slider__item"><h4>Agriculture</h4></div>
+                        </div>
+                    </section>
+                    <section id="skills">
+                        <h3 class="default_h3">Technologies</h3>
+                        <ul class="skills-list">
+                            <li id="js">Javascript</li>
+                            <li id="html5">HTML and CSS</li>
+                            <li id="css3">CSS3</li>
+                            <li id="bash">Bash</li>
+                            <li id="git">Git</li>
+                            <li id="linux">UNIX</li>
+                            <li id="react">React</li>
+                            <li id="php">PHP</li>
+                            <li id="ux_ui">UX/UI</li>
+                            <li id="adobe">InDesign / Illustrator</li>
+                        </ul>
+                        <p class="default_p">Also I have knowledge and experience of working with bitrix framework.<br>I know how to buy and configure hosting, domain name, dns etc.</p>
+                    </section>
+                </div>
+            </div>
+            
+            <div class="main__page_content" data-page="exp">
+                <h1>Experience</h1>
+            </div>
+            <div class="main__page_content" data-page="bla">
+                <h1>Bla bla</h1>
+            </div>
+            <div class="main__page_content" data-page="contact">
+                <h1>Contact</h1>
+            </div>
+            <!-- <section id="main_Features">
                 <div class="main_Features__block">
                     <h3>Employment</h3>
                     <div>
@@ -114,24 +147,7 @@
                         </ul>
                     </div>
                 </div>
-    
-                <div class="main_Features__block">
-                    <h3>Technical skills</h3>
-                    <div>
-                        <ul class="exp-list">
-                            <li>Javascript</li>
-                            <li>HTML and CSS</li>
-                            <li>Bash</li>
-                            <li>Git</li>
-                            <li>UNIX</li>
-                            <li>Docker</li>
-                            <li>PHP</li>
-                            <li>UX/UI</li>
-                            <li>InDesign / Illustrator</li>
-                        </ul>
-                    </div>
-                </div>
-    
+      
                 <div class="main_Features__block">
                     <h3>Languages</h3>
                     <div>

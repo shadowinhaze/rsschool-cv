@@ -1,6 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+.default_h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.default_p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
 header {
-  width: 230px;
+  min-width: 230px;
   background-color: #BDC3FF;
   border-radius: 40px 0 0 40px;
   padding: 55px 0px 55px 20px;
@@ -47,6 +65,7 @@ header .header__container .sideheader__menu_container .main_navigation .main_nav
   padding-left: 10px;
   color: #000000;
   text-decoration: none;
+  border-left: 3px solid transparent;
 }
 header .header__container .sideheader__menu_container .main_navigation .main_navigation__item a:before {
   content: "";
@@ -103,8 +122,24 @@ header .header__container .topheader__socials_container .social_navigation ul .s
   background-size: 110%;
 }
 
-main {
-  padding: 55px 0 55px 30px;
+.main__page_content {
+  flex-grow: 2;
+  display: none;
+}
+.main__page_content.is-active {
+  display: flex;
+}
+.main__page_content .main__container {
+  height: 100%;
+}
+.main__page_content .main__container.left_container {
+  max-width: 580px;
+  padding: 55px 30px;
+  background-color: #BDC3FF;
+}
+.main__page_content .main__container.right_container {
+  padding: 100px 0px 55px 30px;
+  flex-grow: 2;
 }
 
 #greeting h2 {
@@ -112,13 +147,130 @@ main {
   font-size: 38px;
   line-height: 46px;
 }
-#greeting h3 {
-  font-size: 28px;
+
+#summary {
+  margin-top: 80px;
 }
-#greeting p {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 22px;
+
+#projects_slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#projects_slider .slider__wrapper {
+  max-width: 670px;
+  margin-left: -70px;
+  display: flex;
+  column-gap: 25px;
+  padding: 10px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+#projects_slider .slider__wrapper::-webkit-scrollbar {
+  width: 0;
+}
+#projects_slider .slider__wrapper.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+#projects_slider .slider__wrapper.active .slider__item h4::selection {
+  background-color: transparent;
+}
+#projects_slider .slider__wrapper.active .slider__item h4::-moz-selection {
+  background-color: transparent;
+}
+#projects_slider .slider__wrapper .slider__item {
+  position: relative;
+  height: 200px;
+  min-width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px -3px rgba(23, 48, 79, 0.55);
+  border-radius: 12px;
+  background-size: cover;
+}
+#projects_slider .slider__wrapper .slider__item h4 {
+  position: absolute;
+  margin: 0;
+  color: #ffffff;
+}
+#projects_slider .slider__wrapper .slider__item::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  background: rgba(23, 21, 33, 0.55);
+}
+#projects_slider .slider__wrapper #al {
+  background-image: url("./images/proj-slider/wix.png");
+}
+
+#skills {
+  margin-top: 50px;
+}
+#skills .skills-list {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+#skills .skills-list li {
+  height: 75px;
+  width: 75px;
+  box-shadow: 0px 8px 54px rgba(40, 52, 67, 0.15);
+  list-style-type: none;
+  color: transparent;
+  border-radius: 12px;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#skills .skills-list li::selection {
+  background-color: transparent;
+}
+#skills .skills-list li::-moz-selection {
+  background-color: transparent;
+}
+#skills #js {
+  background-image: url("./images/icons/technology/js.svg");
+}
+#skills #html5 {
+  background-image: url("./images/icons/technology/html-5.svg");
+}
+#skills #css3 {
+  background-image: url("./images/icons/technology/css-3.svg");
+}
+#skills #git {
+  background-image: url("./images/icons/technology/git.svg");
+}
+#skills #bash {
+  background-image: url("./images/icons/technology/bash.svg");
+}
+#skills #linux {
+  background-image: url("./images/icons/technology/linux.svg");
+}
+#skills #react {
+  background-image: url("./images/icons/technology/react.svg");
+  background-size: 70px 70px;
+}
+#skills #php {
+  background-image: url("./images/icons/technology/php.svg");
+  background-size: 50px 50px;
+}
+#skills #ux_ui {
+  background-image: url("./images/icons/technology/figma.svg");
+  background-size: 40px 40px;
+}
+#skills #adobe {
+  background-image: url("./images/icons/technology/adobe.svg");
+}
+#skills p {
+  color: #a8a8a8;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 footer {
@@ -146,6 +298,10 @@ footer .footer_container address {
   font-size: 10px;
 }
 
+ul {
+  padding-left: 0;
+}
+
 html {
   scroll-behavior: smooth;
   background-color: #171521;
@@ -154,6 +310,7 @@ html {
 
 body {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -161,8 +318,8 @@ body {
   position: relative;
   display: flex;
   width: 1440px;
-  min-height: 900px;
-  margin: 50px 0;
+  min-height: 800px;
+  margin: 100px 0;
   background-color: #ffffff;
   border-radius: 40px;
 }
