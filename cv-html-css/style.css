@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 header {
-  height: 100%;
   width: 230px;
   background-color: #BDC3FF;
   border-radius: 40px 0 0 40px;
@@ -17,6 +16,9 @@ header .header__container .sideheader__photo_container figure {
   margin: 0;
   text-align: center;
 }
+header .header__container .sideheader__photo_container figure img {
+  filter: drop-shadow(-4px 8px 19px rgba(101, 77, 238, 0.82));
+}
 header .header__container .sideheader__name_container {
   margin: 15px 0 50px 0px;
 }
@@ -28,6 +30,7 @@ header .header__container .sideheader__name_container h1 {
   text-align: center;
 }
 header .header__container .sideheader__menu_container {
+  flex-grow: 2;
   display: flex;
   justify-content: center;
 }
@@ -70,65 +73,116 @@ header .header__container .sideheader__menu_container .main_navigation .main_nav
 header .header__container .sideheader__menu_container .main_navigation .main_navigation__item.active a:before {
   filter: invert(27%) sepia(99%) saturate(2144%) hue-rotate(239deg) brightness(94%) contrast(98%);
 }
+header .header__container .topheader__socials_container {
+  position: absolute;
+  top: 44px;
+  right: 55px;
+}
+header .header__container .topheader__socials_container .social_navigation ul {
+  display: flex;
+  column-gap: 20px;
+}
+header .header__container .topheader__socials_container .social_navigation ul .social_navigation__item a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .header__container .topheader__socials_container .social_navigation ul .social_navigation__item a:hover {
+  filter: invert(27%) sepia(99%) saturate(2144%) hue-rotate(239deg) brightness(94%) contrast(98%);
+}
+header .header__container .topheader__socials_container .social_navigation ul .social_navigation__item #linkedin {
+  background-image: url(./images/icons/linkedin.svg);
+}
+header .header__container .topheader__socials_container .social_navigation ul .social_navigation__item #github {
+  background-image: url(./images/icons/github.svg);
+}
+header .header__container .topheader__socials_container .social_navigation ul .social_navigation__item #e-mail {
+  background-image: url(./images/icons/envelop.svg);
+  background-size: 110%;
+}
+
+main {
+  padding: 55px 0 55px 30px;
+}
+
+#greeting h2 {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+}
+#greeting h3 {
+  font-size: 28px;
+}
+#greeting p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+footer {
+  position: absolute;
+  bottom: 55px;
+  left: 52px;
+}
+footer .footer_container {
+  justify-self: flex-end;
+  text-align: center;
+}
+footer .footer_container .footer_text {
+  text-align: center;
+  font-size: 10px;
+  color: #ffffff;
+}
+footer .footer_container .footer_text a {
+  color: #654DEE;
+}
+footer .footer_container .logo {
+  max-width: 100px;
+}
+footer .footer_container address {
+  margin-top: 10px;
+  font-size: 10px;
+}
 
 html {
   scroll-behavior: smooth;
   background-color: #171521;
-  padding: 20px;
   font-family: Montserrat;
 }
 
 body {
   display: flex;
-  max-width: 1440px;
-  margin: 0 auto;
-  height: 100vh;
+  justify-content: center;
+}
+
+.body__container {
+  position: relative;
+  display: flex;
+  width: 1440px;
+  min-height: 900px;
+  margin: 50px 0;
   background-color: #ffffff;
   border-radius: 40px;
 }
 
-footer {
-  align-items: center;
-  border-top: 1px solid #999;
+.default_button {
+  display: block;
+  width: max-content;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: white;
+  background: #654DEE;
+  padding: 15px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 30px 0;
+  transition: all 0.3s ease;
 }
-
-/* ==== 2. BASE ELEMENTS ==== */
-p.footer_text {
-  width: 100%;
-  text-align: center;
-  font-size: 10px;
-  padding: 5px 0;
-  color: #999;
-}
-
-/* ==== 3. IMGS ==== */
-.logo {
-  max-width: 150px;
-}
-
-/* ==== 4. BLOCKS ==== */
-#summary {
-  display: flex;
-  max-width: 500px;
-  flex-direction: column;
-  align-content: flex-start;
-  margin: 36px 0;
-}
-
-.main_Features__block {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  column-gap: 15px;
-  margin: 42px 0px;
-}
-
-.main_Features__block h3 {
-  width: 20%;
-}
-
-.main_Features__block div {
-  width: 51%;
+.default_button:hover {
+  background: #171521;
 }
 
 /*# sourceMappingURL=style.css.map */
