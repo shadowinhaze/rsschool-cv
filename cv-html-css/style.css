@@ -94,10 +94,10 @@ main {
   max-width: 1440px;
   background-color: #ffffff;
   border-radius: 40px;
+  min-height: min-content;
 }
 @media screen and (min-width: 1440px) {
   .body__container {
-    min-height: 800px;
     margin: 20px auto;
   }
 }
@@ -109,6 +109,11 @@ main {
 @media screen and (max-width: 1024px) {
   .body__container {
     margin: 0;
+  }
+}
+@media screen and (min-width: 420px) {
+  .body__container {
+    min-height: 100vh;
   }
 }
 
@@ -254,7 +259,7 @@ header .header__container .sideheader__menu_container .main_navigation .main_nav
   background-image: url(./images/icons/cpu.svg);
 }
 header .header__container .sideheader__menu_container .main_navigation .main_navigation__item #contacts:before {
-  background-image: url(./images/icons/bag.svg);
+  background-image: url(./images/icons/form.svg);
 }
 header .header__container .sideheader__menu_container .main_navigation .main_navigation__item.active a {
   color: #654DEE;
@@ -324,7 +329,8 @@ header .header__container .burger_icon {
   position: fixed;
   height: 35px;
   width: 35px;
-  background: brown;
+  background-image: url("./images/icons/burger.svg");
+  background-size: contain;
   top: 10px;
   left: calc(80px / 2 - 35px / 2);
   cursor: pointer;
