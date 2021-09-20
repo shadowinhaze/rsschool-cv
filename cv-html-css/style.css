@@ -659,7 +659,7 @@ header .header__container .burger_icon {
 }
 
 #examples_of_code {
-  max-width: 560px;
+  width: 100%;
 }
 #examples_of_code code {
   border-radius: 12px;
