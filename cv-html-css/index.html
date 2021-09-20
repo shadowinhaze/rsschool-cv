@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
@@ -31,7 +31,7 @@
 
 <body>
     <div class="body__container">
-        <header>
+        <header class="header collapsed">
             <div class="header__container">
                 <div class="sideheader__photo_container">
                     <figure id="my_photo">
@@ -44,31 +44,31 @@
                 <div class="sideheader__menu_container">
                     <nav class="main_navigation">
                         <ul>
-                            <li class="main_navigation__item"><a href="#main" id="dashboard" data-for-page="main_page">Main</a></li>
-                            <li class="main_navigation__item active"><a href="#experience" id="product" data-for-page="exp">Experience</a></li>
-                            <li class="main_navigation__item"><a href="#bla" id="pricing" data-for-page="bla">Bla bla</a></li>
-                            <li class="main_navigation__item"><a href="#contact" id="docs" data-for-page="contact">Contact</a></li>
+                            <li class="main_navigation__item active"><a href="#main-page" id="main_page" data-for-page="main_page">Main</a></li>
+                            <li class="main_navigation__item"><a href="#exp-page" id="experience" data-for-page="exp">Experience</a></li>
+                            <li class="main_navigation__item"><a href="#contact-page" id="contacts" data-for-page="contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="topheader__socials_container">
+                    <div class="burger_icon"></div>
                     <nav class="social_navigation">
                         <ul>
                             <li class="social_navigation__item"><a href="https://www.linkedin.com/in/shadowinhaze/" id="linkedin" title="My LinkedIn: @shadowinhaze" target="_blank"></a></li>
                             <li class="social_navigation__item"><a href="mailto:poleshkophillip@gmail.com" id="e-mail" title="Send me a mail!" target="_blank"></a></li>
-                            <li class="social_navigation__item"><a href="#" id="github" title="My opens github repos" target="_blank"></a></li>
+                            <li class="social_navigation__item"><a href="https://github.com/shadowinhaze?tab=repositories" id="github" title="My opens github repos" target="_blank"></a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
         <main>
-            <div class="main__page_content" data-page="main_page">
+            <div class="main__page_content is-active" data-page="main_page">
                 <div class="main__container left_container">
                     <section id="greeting">
                         <h2>👋🏻 Hello World!</h2>
-                        <h3>My name is Yan<br>and I'm a front-end developer's larva 🐛</h3>
-                        <p class="default_p">If you don't want explore my web version CV,<br> please download a paper one:</p>
+                        <h3>My name is Yan and I'm a front-end developer's larva 🐛</h3>
+                        <p class="default_p">If you don't want explore my web version CV, please download a paper one:</p>
                         <a href="#" class="default_button" title="download paper version of Yan's CV">Download CV</a>
                     </section>
                     
@@ -87,33 +87,33 @@
                     <section id="projects_slider">
                         <h2 class="default_h2">Some of my projects</h2>
                         <div class="slider__wrapper">
-                            <div id="al" class="slider__item"><h4>E-commerce</h4></div>
-                            <div id="at" class="slider__item"><h4>Manufacture</h4></div>
-                            <div id="rss-webclock" class="slider__item"><h4>Web-clock</h4></div>
-                            <div id="rss-webplayer" class="slider__item"><h4>Web-player</h4></div>
-                            <div id="tf" class="slider__item"><h4>Agriculture</h4></div>
+                            <div id="al" class="slider__item"><h4>E-commerce</h4><p>Small local science distributor's e-commerce web-resource<br>(Bitrix)<br><a href="https://algimed.com" target="_blank"><i>Link ></i></a></p></div>
+                            <div id="at" class="slider__item"><h4>Manufacture</h4><p>Small local science manufacture's web-site<br>(WP)<br><a href="https://algimed-techno.com" target="_blank"><i>Link ></i></a></p></div>
+                            <div id="rss-webclock" class="slider__item"><h4>Web-clock</h4><p>RSS stage-0 task-project<br><a href="https://rolling-scopes-school.github.io/shadowinhaze-JSFEPRESCHOOL/js-clock/" target="_blank"><i>Link ></i></a></p></div>
+                            <div id="rss-webplayer" class="slider__item"><h4>Web-player</h4><p>RSS stage-0 task-project<br><a href="https://rolling-scopes-school.github.io/shadowinhaze-JSFEPRESCHOOL/custom-video-player/" target="_blank"><i>Link ></i></a></p></div>
+                            <div id="tf" class="slider__item"><h4>Agriculture</h4><p>Local manufacture's web-site<br><a href="https://taktfest.by" target="_blank"><i>Link ></i></a></p></div>
                         </div>
                     </section>
                     <section id="skills">
                         <h2 class="default_h2">Technologies</h2>
                         <ul class="skills-list">
-                            <li id="js">Javascript</li>
-                            <li id="html5">HTML and CSS</li>
-                            <li id="css3">CSS3</li>
-                            <li id="bash">Bash</li>
-                            <li id="git">Git</li>
-                            <li id="linux">UNIX</li>
-                            <li id="react">React</li>
-                            <li id="php">PHP</li>
-                            <li id="ux_ui">UX/UI</li>
-                            <li id="adobe">InDesign / Illustrator</li>
+                            <li id="js"><span>Javascript</span></li>
+                            <li id="html5"><span>HTML and CSS</span></li>
+                            <li id="css3"><span>CSS3</span></li>
+                            <li id="bash"><span>Bash</span></li>
+                            <li id="git"><span>Git</span></li>
+                            <li id="linux"><span>UNIX</span></li>
+                            <li id="react"><span>React</span></li>
+                            <li id="php"><span>PHP</span></li>
+                            <li id="ux_ui"><span>UX/UI</span></li>
+                            <li id="adobe"><span>InDesign / Illustrator</span></li>
                         </ul>
                         <p class="default_p">Also I have knowledge and experience of working with bitrix framework.<br>I know how to buy and configure hosting, domain name, dns etc.</p>
                     </section>
                 </div>
             </div>
             
-            <div class="main__page_content is-active" data-page="exp">
+            <div class="main__page_content" data-page="exp">
                 <div class="main__container left_container">
                     <section id="work">
                         <h2 class="default_h2">Employment</h2>
@@ -139,12 +139,37 @@
                             <li id="git-hub"><a href="#" target="_blank" title="My git-hub"></a></li>
                         </ul>
                     </section>
+                    <section id="languages">
+                        <h2 class="default_h2">I can communicate using:</h2>
+                        <ul>
+                            <li>
+                                <div class="card_item">
+                                    <div id="russian-icon" class="icon-block">🇷🇺</div>
+                                    <div class="main-block"><h3>Russian</h3><p>Основной язык.</p></div>
+                                    <div class="date-block">native</div>
+                                </div>
+                            </li>
+                            <li><div class="card_item">
+                                    <div id="polska-icon" class="icon-block">🇵🇱</div>
+                                    <div class="main-block"><h3>Polish</h3><p>Posiadam umiejętności komunikacyjne. Język Polski jest ojczysty dla mnie.</p></div>
+                                    <div class="date-block">B1 - B2</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card_item">
+                                    <div id="usa-icon" class="icon-block">🇺🇸</div>
+                                    <div class="main-block"><h3>English</h3><p>English does not cause difficulties.</p></div>
+                                    <div class="date-block">A2 - B1</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
                 <div class="main__container right_container">
                     <section id="examples_of_code">
                         <h2 class="default_h2">Examples of code</h2>
                         <h3 class="avenger__b">"Fun with trees: max sum" task from CodeWars</h3>
-                        <p class="default_p"><a href="https://www.codewars.com/kata/57e5279b7cf1aea5cf000359" target="_blank" title="Fun with trees task codewars">Link</a> for task</p>
+                        <p class="default_p"><a href="https://www.codewars.com/kata/57e5279b7cf1aea5cf000359" target="_blank" title="Fun with trees task codewars">Link</a> to task</p>
                         <pre>
                             <code>
 function maxSum(root) {
@@ -167,40 +192,36 @@ function maxSum(root) {
                 </div>
             </div>
 
-            <div class="main__page_content" data-page="bla">
-                <h1>Bla bla</h1>
-            </div>
             <div class="main__page_content" data-page="contact">
-                <h1>Contact</h1>
+                <div class="main__container left_container">
+                    <section id="contact">
+                        <h2>📧 Contact with me</h2>
+                        <h3>I will be happy to become a trainee in your team</h3>
+                        <p class="default_p">And I will quickly turn from a larva into a stinging bee of web-development. 🐝</p>
+
+                        <form class="contact_form" action="https://formsubmit.co/shadowinhaze@gmail.com" method="POST">
+                            <div class="input_wrapper">
+                                <input type="text" name="name" placeholder="John" class="contact_form__field" id="name" required>
+                                <label for="name" class="contact_form__label">Name</label>
+                            </div>
+                            
+                            <div class="input_wrapper">
+                                <input type="email" name="email" placeholder="simple@gmail.com" class="contact_form__field" id="email" required>
+                                <label for="email" class="contact_form__label">E-mail</label>
+                            </div>
+
+                            <div class="input_wrapper">
+                                <textarea name="message" placeholder="Details of your problem" id="message" class="contact_form__field" rows="5" required></textarea>
+                                <label for="message" class="contact_form__label">Message</label>
+                            </div>
+                            
+                            <button class="default_button" type="submit">Send</button>
+                       </form>
+                    </section>
+                </div>
             </div>
-            <!-- 
-                <div class="main_Features__block">
-                    <h3>Examples</h3>
-                    <div>
-                        <ul class="exp-list">
-                            <li>Sites of Algimed Ltd (<a href="algimed.com" target="_blank">algimed.com</a>, <a
-                                    href="algimed-techno.com" target="_blank">algimed-techno.com</a>);</li>
-                            <li><a href="https://www.codewars.com/users/shadowinhaze/completed_solutions"
-                                    target="_blank">Profile</a> at CodeWars platform.</li>
-                        </ul>
-                    </div>
-                </div>
-      
-                <div class="main_Features__block">
-                    <h3>Languages</h3>
-                    <div>
-                        <ul class="default-list">
-                            <li><strong>Russian</strong> - native;</li>
-                            <li><strong>Polish</strong> - B1;</li>
-                            <li><strong>English</strong> - A2 / B1, lots of chat with SM / PM / Applicators from different
-                                companies.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section> -->
         </main>
-        <footer>
+        <footer class="footer">
             <div class="footer_container">
                 <p class="footer_text">Jan Poleshko 2021 CV for<br><a href="https://rs.school/js/">RSSchool course</a></p>
                 <a href="https://github.com/rolling-scopes-school" title="RSS project github"><img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="RSSchool github"></a>
