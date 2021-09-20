@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script async src="./scripts/slider.js" type="module"></script>
+    <script async src="./scripts/pager.js" type="module"></script>
+    <script async src="./scripts/index.js" type="module"></script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>CV Jan Poleshko</title>
+</head>
+
+<body>
+    <div class="body__container">
+        <header class="header collapsed">
+            <div class="header__container">
+                <div class="sideheader__photo_container">
+                    <figure id="my_photo">
+                        <img src="./images/memoji.png" alt="My memoji">
+                    </figure>
+                </div>
+                <div class="sideheader__name_container">
+                    <h1>Yan Poleshko</h1>
+                </div>
+                <div class="sideheader__menu_container">
+                    <nav class="main_navigation">
+                        <ul>
+                            <li class="main_navigation__item active"><a href="#main-page" id="main_page" data-for-page="main_page">Main</a></li>
+                            <li class="main_navigation__item"><a href="#exp-page" id="experience" data-for-page="exp">Experience</a></li>
+                            <li class="main_navigation__item"><a href="#contact-page" id="contacts" data-for-page="contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="topheader__socials_container">
+                    <div class="burger_icon"></div>
+                    <nav class="social_navigation">
+                        <ul>
+                            <li class="social_navigation__item"><a href="https://www.linkedin.com/in/shadowinhaze/" id="linkedin" title="My LinkedIn: @shadowinhaze" target="_blank"></a></li>
+                            <li class="social_navigation__item"><a href="mailto:poleshkophillip@gmail.com" id="e-mail" title="Send me a mail!" target="_blank"></a></li>
+                            <li class="social_navigation__item"><a href="https://github.com/shadowinhaze?tab=repositories" id="github" title="My opens github repos" target="_blank"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main__page_content is-active" data-page="main_page">
+                <div class="main__container left_container">
+                    <section id="greeting">
+                        <h2>👋🏻 Hello World!</h2>
+                        <h3>My name is Yan and I'm a front-end developer's larva 🐛</h3>
+                        <p class="default_p">If you don't want explore my web version CV, please download a paper one:</p>
+                        <a href="#" class="default_button" title="download paper version of Yan's CV">Download CV</a>
+                    </section>
+                    
+                    <section id="summary">
+                        <h2 class="default_h2">Summary</h2>
+                        <p class="default_p">
+                            Entry-level front-end developer with 5 years of experience in maintaining and building simple web-sites.
+                            Seeking for new challenges that will expand my skill ant technial level. I dream to become a real developer.
+                        </p>
+                        <p class="default_p">
+                            At previous company I was also involved in making POS-meterials, watching for SEO-optimisation and base workflow.
+                        </p>
+                    </section>
+                </div>
+                <div class="main__container right_container">
+                    <section id="projects_slider">
+                        <h2 class="default_h2">Some of my projects</h2>
+                        <div class="slider__wrapper">
+                            <div id="al" class="slider__item"><h4>E-commerce</h4><p>Small local science distributor's e-commerce web-resource<br>(Bitrix)<br><a href="https://algimed.com" target="_blank"><i>Link ></i></a></p></div>
+                            <div id="at" class="slider__item"><h4>Manufacture</h4><p>Small local science manufacture's web-site<br>(WP)<br><a href="https://algimed-techno.com" target="_blank"><i>Link ></i></a></p></div>
+                            <div id="rss-webclock" class="slider__item"><h4>Web-clock</h4><p>RSS stage-0 task-project<br><a href="https://rolling-scopes-school.github.io/shadowinhaze-JSFEPRESCHOOL/js-clock/" target="_blank"><i>Link ></i></a></p></div>
+                            <div id="rss-webplayer" class="slider__item"><h4>Web-player</h4><p>RSS stage-0 task-project<br><a href="https://rolling-scopes-school.github.io/shadowinhaze-JSFEPRESCHOOL/custom-video-player/" target="_blank"><i>Link ></i></a></p></div>
+                            <div id="tf" class="slider__item"><h4>Agriculture</h4><p>Local manufacture's web-site<br><a href="https://taktfest.by" target="_blank"><i>Link ></i></a></p></div>
+                        </div>
+                    </section>
+                    <section id="skills">
+                        <h2 class="default_h2">Technologies</h2>
+                        <ul class="skills-list">
+                            <li id="js"><span>Javascript</span></li>
+                            <li id="html5"><span>HTML and CSS</span></li>
+                            <li id="css3"><span>CSS3</span></li>
+                            <li id="bash"><span>Bash</span></li>
+                            <li id="git"><span>Git</span></li>
+                            <li id="linux"><span>UNIX</span></li>
+                            <li id="react"><span>React</span></li>
+                            <li id="php"><span>PHP</span></li>
+                            <li id="ux_ui"><span>UX/UI</span></li>
+                            <li id="adobe"><span>InDesign / Illustrator</span></li>
+                        </ul>
+                        <p class="default_p">Also I have knowledge and experience of working with bitrix framework.<br>I know how to buy and configure hosting, domain name, dns etc.</p>
+                    </section>
+                </div>
+            </div>
+            
+            <div class="main__page_content" data-page="exp">
+                <div class="main__container left_container">
+                    <section id="work">
+                        <h2 class="default_h2">Employment</h2>
+                        <div class="card_item">
+                            <div id="work-icon" class="icon-block">👨‍💻</div>
+                            <div class="main-block"><h3>Algimed Ltd.</h3><p>WebMaster</p></div>
+                            <div class="date-block">2015 - 2021</div>
+                        </div>
+                    </section>
+
+                    <section id="education">
+                        <h2 class="default_h2">Education</h2>
+                        <div class="card_item">
+                            <div id="eductaion-icon" class="icon-block">🎓</div>
+                            <div class="main-block"><h3>Belarusian State University</h3><p>Biological faculty Bachelor</p></div>
+                            <div class="date-block">2012 - 2017</div>
+                        </div>
+                    </section>
+                    <section id="outer_examples">
+                        <h2 class="default_h2">Some reps with my code</h2>
+                        <ul>
+                            <li id="jsfiddle"><a href="https://jsfiddle.net/user/shadowinhaze/fiddles/" target="_blank" title="My JS-fiddle"></a></li> 
+                            <li id="git-hub"><a href="#" target="_blank" title="My git-hub"></a></li>
+                        </ul>
+                    </section>
+                    <section id="languages">
+                        <h2 class="default_h2">I can communicate using:</h2>
+                        <ul>
+                            <li>
+                                <div class="card_item">
+                                    <div id="russian-icon" class="icon-block">🇷🇺</div>
+                                    <div class="main-block"><h3>Russian</h3><p>Основной язык.</p></div>
+                                    <div class="date-block">native</div>
+                                </div>
+                            </li>
+                            <li><div class="card_item">
+                                    <div id="polska-icon" class="icon-block">🇵🇱</div>
+                                    <div class="main-block"><h3>Polish</h3><p>Posiadam umiejętności komunikacyjne. Język Polski jest ojczysty dla mnie.</p></div>
+                                    <div class="date-block">B1 - B2</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card_item">
+                                    <div id="usa-icon" class="icon-block">🇺🇸</div>
+                                    <div class="main-block"><h3>English</h3><p>English does not cause difficulties.</p></div>
+                                    <div class="date-block">A2 - B1</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="main__container right_container">
+                    <section id="examples_of_code">
+                        <h2 class="default_h2">Examples of code</h2>
+                        <h3 class="avenger__b">"Fun with trees: max sum" task from CodeWars</h3>
+                        <p class="default_p"><a href="https://www.codewars.com/kata/57e5279b7cf1aea5cf000359" target="_blank" title="Fun with trees task codewars">Link</a> to task</p>
+                        <pre>
+                            <code>
+function maxSum(root) {
+    let max = 0;
+    const byPass = (node) => {
+            if (node === undefined || node === null) return 0;
+            const maxLeft = byPass(node.left);
+            const maxRight = byPass(node.right);
+            const maxPreConnected = Math.max(node.value + maxLeft, node.value + maxRight);
+            const maxConnected = Math.max(maxPreConnected, maxLeft + node.value, maxRight + node.value);
+            max = Math.max(maxLeft, maxRight, maxConnected, node.value);
+            return maxConnected;
+    }
+    byPass(root);
+    return max;
+}
+                            </code>
+                        </pre>
+                    </section>
+                </div>
+            </div>
+
+            <div class="main__page_content" data-page="contact">
+                <div class="main__container left_container">
+                    <section id="contact">
+                        <h2>📧 Contact with me</h2>
+                        <h3>I will be happy to become a trainee in your team</h3>
+                        <p class="default_p">And I will quickly turn from a larva into a stinging bee of web-development. 🐝</p>
+
+                        <form class="contact_form" action="https://formsubmit.co/shadowinhaze@gmail.com" method="POST">
+                            <div class="input_wrapper">
+                                <input type="text" name="name" placeholder="John" class="contact_form__field" id="name" required>
+                                <label for="name" class="contact_form__label">Name</label>
+                            </div>
+                            
+                            <div class="input_wrapper">
+                                <input type="email" name="email" placeholder="simple@gmail.com" class="contact_form__field" id="email" required>
+                                <label for="email" class="contact_form__label">E-mail</label>
+                            </div>
+
+                            <div class="input_wrapper">
+                                <textarea name="message" placeholder="Details of your problem" id="message" class="contact_form__field" rows="5" required></textarea>
+                                <label for="message" class="contact_form__label">Message</label>
+                            </div>
+                            
+                            <button class="default_button" type="submit">Send</button>
+                       </form>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <p class="footer_text">Jan Poleshko 2021 CV for<br><a href="https://rs.school/js/">RSSchool course</a></p>
+                <a href="https://github.com/rolling-scopes-school" title="RSS project github"><img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="RSSchool github"></a>
+                <address>
+                    Warszawa, Polska
+                </address>
+            </div>
+        </footer>
+    </div>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
