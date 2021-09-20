@@ -1,1 +1,1 @@
-[link to CV](https://shadowinhaze.github.io/rsschool-cv/)
+[link to CV](https://shadowinhaze.github.io/rsschool-cv/cv-html-css/)
