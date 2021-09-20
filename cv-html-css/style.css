@@ -99,6 +99,7 @@ main {
 @media screen and (min-width: 1440px) {
   .body__container {
     margin: 20px auto;
+    min-height: 800px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -111,7 +112,7 @@ main {
     margin: 0;
   }
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 420px) and (max-width: 1440px) {
   .body__container {
     min-height: 100vh;
   }
