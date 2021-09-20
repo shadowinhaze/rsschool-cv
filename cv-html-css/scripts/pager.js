@@ -10,7 +10,6 @@ pageSwitchers.forEach( switcher => {
         pageSwitcherName = switcher.firstChild.getAttribute('data-for-page');
         pages.forEach( page => {
             pageName = page.getAttribute('data-page');
-            console.log(pageSwitcherName, pageName)
             if (pageName === pageSwitcherName) {
                 page.classList.add('is-active')
             } else {

@@ -21,15 +21,16 @@ slider.addEventListener('mouseup', () => {
 });
 
 slider.addEventListener('mousemove', (e) => {
-  if(!isDown) return;
+  if (!isDown) return;
+  slider.style.scrollBehavior = "";
   e.preventDefault();
   const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 1.3;
+  const walk = (x - startX) * 1.5;
   slider.scrollLeft = scrollLeft - walk;
 });
 
 slider.addEventListener('wheel', (e) => {
     e.preventDefault();
+    slider.style.scrollBehavior = "smooth";
     slider.scrollLeft += e.deltaY;
-
-  });
+});

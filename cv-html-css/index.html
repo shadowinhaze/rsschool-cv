@@ -9,11 +9,15 @@
 
 
     <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
     <link rel="stylesheet" href="./style.css">
+    
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <script async src="./scripts/slider.js" type="module"></script>
     <script async src="./scripts/pager.js" type="module"></script>
-
+    
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -41,26 +45,26 @@
                 <div class="sideheader__menu_container">
                     <nav class="main_navigation">
                         <ul>
-                            <li class="main_navigation__item active"><a href="#" id="dashboard" data-for-page="main_page">Main</a></li>
-                            <li class="main_navigation__item"><a href="#" id="product" data-for-page="exp">Experience</a></li>
-                            <li class="main_navigation__item"><a href="#" id="pricing" data-for-page="bla">Bla bla</a></li>
-                            <li class="main_navigation__item"><a href="#" id="docs" data-for-page="contact">Contact</a></li>
+                            <li class="main_navigation__item"><a href="#main" id="dashboard" data-for-page="main_page">Main</a></li>
+                            <li class="main_navigation__item active"><a href="#experience" id="product" data-for-page="exp">Experience</a></li>
+                            <li class="main_navigation__item"><a href="#bla" id="pricing" data-for-page="bla">Bla bla</a></li>
+                            <li class="main_navigation__item"><a href="#contact" id="docs" data-for-page="contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="topheader__socials_container">
                     <nav class="social_navigation">
                         <ul>
-                            <li class="social_navigation__item"><a href="https://www.linkedin.com/in/shadowinhaze/" id="linkedin" title="My LinkedIn: @shadowinhaze"></a></li>
-                            <li class="social_navigation__item"><a href="mailto:poleshkophillip@gmail.com" id="e-mail" title="Send me a mail!"></a></li>
-                            <li class="social_navigation__item"><a href="#" id="github" title="My opens github repos"></a></li>
+                            <li class="social_navigation__item"><a href="https://www.linkedin.com/in/shadowinhaze/" id="linkedin" title="My LinkedIn: @shadowinhaze" target="_blank"></a></li>
+                            <li class="social_navigation__item"><a href="mailto:poleshkophillip@gmail.com" id="e-mail" title="Send me a mail!" target="_blank"></a></li>
+                            <li class="social_navigation__item"><a href="#" id="github" title="My opens github repos" target="_blank"></a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
         <main>
-            <div class="main__page_content is-active" data-page="main_page">
+            <div class="main__page_content" data-page="main_page">
                 <div class="main__container left_container">
                     <section id="greeting">
                         <h2>👋🏻 Hello World!</h2>
@@ -70,7 +74,7 @@
                     </section>
                     
                     <section id="summary">
-                        <h3 class="default_h3">Summary</h3>
+                        <h2 class="default_h2">Summary</h2>
                         <p class="default_p">
                             Entry-level front-end developer with 5 years of experience in maintaining and building simple web-sites.
                             Seeking for new challenges that will expand my skill ant technial level. I dream to become a real developer.
@@ -82,9 +86,9 @@
                 </div>
                 <div class="main__container right_container">
                     <section id="projects_slider">
-                        <h3 class="default_h3">Some of my projects</h3>
+                        <h2 class="default_h2">Some of my projects</h2>
                         <div class="slider__wrapper">
-                            <div id="al" class="slider__item"><h4>E-commerse</h4></div>
+                            <div id="al" class="slider__item"><h4>E-commerce</h4></div>
                             <div id="at" class="slider__item"><h4>Manufacture</h4></div>
                             <div id="rss-webclock" class="slider__item"><h4>Web-clock</h4></div>
                             <div id="rss-webplayer" class="slider__item"><h4>Web-player</h4></div>
@@ -92,7 +96,7 @@
                         </div>
                     </section>
                     <section id="skills">
-                        <h3 class="default_h3">Technologies</h3>
+                        <h2 class="default_h2">Technologies</h2>
                         <ul class="skills-list">
                             <li id="js">Javascript</li>
                             <li id="html5">HTML and CSS</li>
@@ -110,32 +114,67 @@
                 </div>
             </div>
             
-            <div class="main__page_content" data-page="exp">
-                <h1>Experience</h1>
+            <div class="main__page_content is-active" data-page="exp">
+                <div class="main__container left_container">
+                    <section id="work">
+                        <h2 class="default_h2">Employment</h2>
+                        <div class="card_item">
+                            <div id="work-icon" class="icon-block">👨‍💻</div>
+                            <div class="main-block"><h3>Algimed Ltd.</h3><p>WebMaster</p></div>
+                            <div class="date-block">2015 - 2021</div>
+                        </div>
+                    </section>
+
+                    <section id="education">
+                        <h2 class="default_h2">Education</h2>
+                        <div class="card_item">
+                            <div id="eductaion-icon" class="icon-block">🎓</div>
+                            <div class="main-block"><h3>Belarusian State University</h3><p>Biological faculty Bachelor</p></div>
+                            <div class="date-block">2012 - 2017</div>
+                        </div>
+                    </section>
+                    <section id="outer_examples">
+                        <h2 class="default_h2">Some reps with my code</h2>
+                        <ul>
+                            <li id="jsfiddle"><a href="https://jsfiddle.net/user/shadowinhaze/fiddles/" target="_blank" title="My JS-fiddle"></a></li> 
+                            <li id="git-hub"><a href="#" target="_blank" title="My git-hub"></a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="main__container right_container">
+                    <section id="examples_of_code">
+                        <h2 class="default_h2">Examples of code</h2>
+                        <h3 class="avenger__b">"Fun with trees: max sum" task from CodeWars</h3>
+                        <p class="default_p"><a href="https://www.codewars.com/kata/57e5279b7cf1aea5cf000359" target="_blank" title="Fun with trees task codewars">Link</a> for task</p>
+                        <pre>
+                            <code>
+function maxSum(root) {
+    let max = 0;
+    const byPass = (node) => {
+            if (node === undefined || node === null) return 0;
+            const maxLeft = byPass(node.left);
+            const maxRight = byPass(node.right);
+            const maxPreConnected = Math.max(node.value + maxLeft, node.value + maxRight);
+            const maxConnected = Math.max(maxPreConnected, maxLeft + node.value, maxRight + node.value);
+            max = Math.max(maxLeft, maxRight, maxConnected, node.value);
+            return maxConnected;
+    }
+    byPass(root);
+    return max;
+}
+                            </code>
+                        </pre>
+                    </section>
+                </div>
             </div>
+
             <div class="main__page_content" data-page="bla">
                 <h1>Bla bla</h1>
             </div>
             <div class="main__page_content" data-page="contact">
                 <h1>Contact</h1>
             </div>
-            <!-- <section id="main_Features">
-                <div class="main_Features__block">
-                    <h3>Employment</h3>
-                    <div>
-                        <h4>Algimed Ltd. WebMaster</h4>
-                        <p>2015 - 2021</p>
-                    </div>
-                </div>
-    
-                <div class="main_Features__block">
-                    <h3>Education</h3>
-                    <div>
-                        <h4>BSU (Belarus)</h4>
-                        <p>2012-17 -> Biological faculty Bachelor</p>
-                    </div>
-                </div>
-    
+            <!-- 
                 <div class="main_Features__block">
                     <h3>Examples</h3>
                     <div>
