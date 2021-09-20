@@ -32,7 +32,7 @@ Total: 125
 * Проекты +5
 * En версия +10
 
-* ссылка на PR, чтобы не искали:  +10
+* ссылка на PR, чтобы не искали: https://github.com/shadowinhaze/rsschool-cv/pull/4#issue-697341101  +10
 
 `
 
